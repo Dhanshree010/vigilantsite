@@ -1,0 +1,25 @@
+{
+  "name": "visionops-root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VisionOps: Edge AI & Workplace Safety Compliance SaaS Platform Monorepo",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start:edge": "python edge-ai/src/worker.py --source simulate",
+    "simulate": "python edge-ai/simulate_edge.py 3",
+    "generate:pdf": "python generate_report_pdf.py",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "edge-ai",
+    "computer-vision",
+    "yolov8",
+    "bytetrack",
+    "mern-stack",
+    "safety-compliance",
+    "iot"
+  ],
+  "author": "VisionOps Engineering",
+  "license": "MIT"
+}
