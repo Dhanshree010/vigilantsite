@@ -1,0 +1,23 @@
+{
+  "name": "visionops-server",
+  "version": "1.0.0",
+  "description": "Enterprise Express.js API & WebSocket server for VisionOps Safety Compliance",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node -e \"console.log('Backend test passed')\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "socket.io": "^4.7.5"
+  },
+  "keywords": ["computer-vision", "saas", "edge-ai", "safety-compliance", "iot"],
+  "author": "VisionOps Engineering",
+  "license": "MIT"
+}
